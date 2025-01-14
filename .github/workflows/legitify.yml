@@ -1,0 +1,9 @@
+name: legitify
+on:
+  push:
+jobs:
+  legitify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Legitify Analyze
+        uses: Legit-Labs/legitify@v1.0.11
