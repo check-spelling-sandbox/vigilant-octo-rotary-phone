@@ -1,0 +1,9 @@
+name: fortify
+on:
+  push:
+jobs:
+  fortify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fortify AST Scan
+        uses: fortify/github-action@v1.6.4
