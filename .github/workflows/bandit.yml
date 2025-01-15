@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Bandit
     steps:
-      - uses: shundor/bandit-action@v1
+      - uses: shundor/python-bandit-scan@v1
         with: 
           path: "."
           level: high
