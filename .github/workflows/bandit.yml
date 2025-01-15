@@ -1,0 +1,14 @@
+name: bandit
+on: [push]
+
+jobs:
+  bandit:
+    runs-on: ubuntu-latest
+    name: Bandit
+    steps:
+      - uses: shundor/bandit-action@v1
+        with: 
+          path: "."
+          level: high
+          confidence: high
+          exit_zero: true
